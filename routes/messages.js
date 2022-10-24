@@ -14,6 +14,8 @@ router.post("/", messageController.create);
 
 // // PUT
 
+router.put("/:id", messageController.update);
+
 // router.put("/:id", messageController.updateById);
 
 
