@@ -6,10 +6,7 @@ const messageController = require('../controllers/messages');
 
 router.get("/", messageController.getAll);
 
-// app.post('/api/v1/messages', (req, res) => { // nieuwe schrijfwijze
-//     res.send("POST messages"); 
-// });
-
+router.get("/:id", messageController.getById);
 // // PUT
 
 // app.put('/api/v1/messages/:id', (req, res) => { // put = dient om de todolijst te updaten
