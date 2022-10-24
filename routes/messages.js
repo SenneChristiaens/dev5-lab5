@@ -16,15 +16,8 @@ router.post("/", messageController.create);
 
 router.put("/:id", messageController.update);
 
-// router.put("/:id", messageController.updateById);
-
-
-
-
 // // DEL
 
-// app.delete('/api/v1/messages/:id', (req, res) => { // :id -> om 1 specifiek message te deleten
-//     res.send("DELETE messages " + req.params.id); // 
-// });
+router.delete("/:id", messageController.deleteMessageById);
 
 module.exports = router;
