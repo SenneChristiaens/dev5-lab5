@@ -7,11 +7,16 @@ const messageController = require('../controllers/messages');
 router.get("/", messageController.getAll);
 
 router.get("/:id", messageController.getById);
+
+// POST
+
+router.post("/", messageController.create);
+
 // // PUT
 
-// app.put('/api/v1/messages/:id', (req, res) => { // put = dient om de todolijst te updaten
-//     res.send("PUT messages");
-// });
+// router.put("/:id", messageController.updateById);
+
+
 
 
 // // DEL

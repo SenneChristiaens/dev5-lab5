@@ -39,8 +39,23 @@ const getById = (req, res) => {
     });
 };
 
+//create message
+const create = (req, res) => {
+    res.json({
+        "status": "success",
+        "message": "POST message",
+        "data": 
+            {
+                "user": req.body.user,
+                "message": req.body.message
+            }
+    });
+};
+
+
 
 
 
 module.exports.getAll = getAll;
 module.exports.getById = getById;
+module.exports.create = create;
